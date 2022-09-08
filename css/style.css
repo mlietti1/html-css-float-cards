@@ -28,22 +28,49 @@ h1 {
 
 .container {
     width: 80%;
-    padding-top: 40px;
+    padding-top: 20px;
+    margin: 0 auto;
 }
 
 .container.titolo {
     text-align: center;
 }
 
-.row .col {
-    float: left;
-    width: calc(100% / 3);
+.row {
+    padding-top: 20px;
 }
 
 .row img {
     height: 100px;
+    vertical-align: middle;
 }
+
 
 .col .info {
     display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5rem;
+    padding-left: 15px;
+}
+
+.row .col {
+    float: left;
+    height: 100px;
+    width: calc(100% / 3 - 1rem);
+    background-color: #0f0e17;
+    color: white;
+    box-sizing: content-box;
+    margin: 1rem 1rem;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+.col:last-child {
+    margin-right: 0;
+}
+
+.mail {
+    color: #38b7ed;
 }
