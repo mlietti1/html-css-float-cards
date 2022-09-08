@@ -1,0 +1,49 @@
+/* general */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.debug {
+    border: 1px solid rgb(0, 128, 255);
+    background-color: rgba(0, 128, 255, 0.24);
+}
+
+main {
+    font-family: 'Fredoka', sans-serif;
+}
+
+h1 {
+    color: #e53170;
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+.container {
+    width: 80%;
+    padding-top: 40px;
+}
+
+.container.titolo {
+    text-align: center;
+}
+
+.row .col {
+    float: left;
+    width: calc(100% / 3);
+}
+
+.row img {
+    height: 100px;
+}
+
+.col .info {
+    display: inline-block;
+}
